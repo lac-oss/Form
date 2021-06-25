@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <h1>THE CODE REVIEW</h1>
+    
+    <form action="index.html" method="POST" >
+    
+    <h2>Signup for our newsletter</h2>
+    <h3>Get the latest news on how your code is doing right in your inbox</h3>
+
+    <hr class="scnd">
+    <hr class = "scnd">
+    
+    <fieldset>
+            <legend>Contact information</legend>
+        
+            <span>
+                <label for="name">Full Name</label>
+                <input type ="text" id = "name" name ="user_name" placeholder="required"><br>
+            </span>
+
+            <span>
+                <label for="email">Email Address</label>
+                <input type ="email" id = "email" name ="user_email" placeholder="required"><br>
+            </span>
+
+            <span>
+                <label for="phone">Phone number</label>
+                <input type ="tel" id = "phone" name ="user_phone"><br>
+            </span>
+
+            <span>
+                <label for="straddress">Street Address</label>
+                <input type ="text" id = "straddress" name ="user_straddress"><br>
+            </span>
+
+            <span>
+                <label for="city">City</label>
+                <input type ="text" id = "city" name ="user_city"><br>
+            </span>
+
+            <span>
+                <label for="Citychoice">State</label>
+                <select id="Citychoice" name="city_choice">
+                    <option value="London">London</option>
+                    <option value="Birmigham">Birmigham</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="London">London</option>
+                    <option value="Catenbury">Catenbury</option> 
+                </select>
+            </span>
+
+            <br>
+
+            <span class="zip">
+                <label class="zip" for="zipcode">Zip Code</label>
+                <input type ="text" id = "zipcode" name ="user_zipcode"><br>
+            </span>
+
+    </fieldset>
+
+
+    <hr class="scnd">
+
+
+
+    <fieldset>
+        <legend>Newsletter</legend>
+
+        <p>Select the newsletters you would like to receive</p>
+
+        <input type="checkbox" id="HTMLnews" value="HTML" name="HTML" >
+        <label for="HTMLnews">HTML news</label><br>
+
+        <input type="checkbox" id="CSSNews" value="CSS" name="CSS">
+        <label for="CSSNews">CSS news</label> <br>
+
+        <input type="checkbox" id="JavaScriptNews" value="Java" name="Java">
+        <label for="JavaScriptNews">Java Script News</label><br>
+
+        
+        <legend>Newsletter format</legend>
+       
+        <input type="radio" id="HTML" value="text" name="news">
+        <label for="HTML">HTML</label><br>
+
+        <input type="radio" id="plaintext" value="text" name="news">
+        <label for="plaintext">Plain Text</label><br>
+
+        <label for="txtarea">Other topics you'd like to hear about</label>
+        <textarea id="txtarea" name="other_text"></textarea> <br>
+
+
+        <br>
+    </fieldset>
+
+        <button type="submit">Sign up</button>
+
+    </form>
+
+
+    <p class="last">Copyright The Code Review</p>
+
+  
+</body>
+</html>
